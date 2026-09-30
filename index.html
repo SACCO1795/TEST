@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assistente Acquisti</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 20px;
+        }
+
+        input {
+            width: 300px;
+            padding: 8px;
+        }
+
+        button {
+            padding: 8px;
+        }
+
+        #risultato {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Ricerca Costi Acquisti</h2>
+
+<input id="articolo" placeholder="Es. Notebook Dell">
+
+<button onclick="cerca()">
+    Cerca
+</button>
+
+<div id="risultato"></div>
+
+<script>
+function cerca() {
+
+    let articolo =
+        document.getElementById("articolo").value;
+
+    document.getElementById("risultato").innerHTML =
+        "Costo indicativo per: " + articolo;
+}
+</script>
+
+</body>
+</html>
